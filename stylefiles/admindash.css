@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #7404eb;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header img {
+    height: 80px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+
+  .header a {
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .admin-details {
+    margin-bottom: 20px;
+  }
+
+  .admin-details h2 {
+    margin-bottom: 10px;
+  }
+
+  .admin-details label {
+    font-weight: bold;
+  }
+
+  .admin-details p {
+    margin-bottom: 10px;
+  }
+
+  .pending-requests {
+    margin-bottom: 20px;
+  }
+
+  .pending-requests h2 {
+    margin-bottom: 10px;
+  }
+
+  .request {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .request label {
+    font-weight: bold;
+  }
+
+  .request p {
+    margin-bottom: 5px;
+  }
+
+  .request .actions {
+    margin-top: 10px;
+  }
+
+  .request .actions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+  }
+
+  .request .actions button.approve {
+    color: green;
+  }
+
+  .request .actions button.decline {
+    color: red;
+  }
+
+  footer {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #6e9cde;
+    color: #ffffff;
+  }

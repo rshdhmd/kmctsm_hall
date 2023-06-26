@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylefiles/mybookings.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="/assets/header_logo 1.svg" alt="logo"></div>
+        <div class="header-text">KMCTCE SEMINAR HALL BOOKING SYSTEM</div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="bookingpage.html">Home</a>
+            <a class="nav-link" href="dashboard.html">Logout</a>
+        </ul>
+      </nav>
+
+    <main>
+        <div class="container">
+            <div class="profile">
+              <h2>Profile</h2>
+              <label for="username">Username:</label>
+              <p id="username">John Doe</p>
+              <label for="email">Email:</label>
+              <p id="email">johndoe@example.com</p>
+              <label for="semester">Semester:</label>
+              <p id="semester">5th Semester</p>
+              <label for="department">Department:</label>
+              <p id="department">Computer Science</p>
+            </div>
+            <div class="tabs">
+              <div class="tab-buttons">
+                <button class="tab-button active" onclick="changeTab(event, 'bookingStatus')">Booking Status</button>
+              </div>
+              <div class="tab-content active" id="bookingStatus">
+                <h2>Booking Status</h2>
+                <p>This is where you can view the status of the seminar hall you have booked.</p>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            function changeTab(event, tabName) {
+              // Hide all tab contents
+              const tabContents = document.getElementsByClassName("tab-content");
+              for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+              }
+        
+              // Remove "active" class from all tab buttons
+              const tabButtons = document.getElementsByClassName("tab-button");
+              for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+              }
+        
+              // Show the selected tab content and add "active" class to the tab button
+              document.getElementById(tabName).style.display = "block";
+              event.currentTarget.classList.add("active");
+            }
+        </script>
+              
+    </main>
+
+
+</body>
+</html>

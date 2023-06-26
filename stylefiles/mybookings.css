@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #165EC5;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .header-text {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+    cursor: pointer;
+  
+  }
+  .navbar {
+    background-color:aliceblue;
+    text-align:right;
+    padding-right: 20px;
+    
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .profile {
+    margin-bottom: 20px;
+  }
+
+  .profile h2 {
+    margin-bottom: 10px;
+  }
+
+  .profile label {
+    font-weight: bold;
+  }
+
+  .profile p {
+    margin-bottom: 10px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-buttons {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+  footer {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #6e9cde;
+    color: #ffffff;
+  }

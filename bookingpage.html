@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="/stylefiles/bookingpage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="/assets/header_logo 1.svg" alt="logo"></div>
+        <div class="header-text">KMCTCE SEMINAR HALL BOOKING SYSTEM</div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav ml-auto">
+<a class="nav-link" href="mybookings.html">My Bookings</a>
+<a class="nav-link" href="dashboard.html">Logout</a>
+        </ul>
+      </nav>
+      <main>
+        <main>
+          <div class="container">
+              <h2>Seminar Hall Booking</h2>
+              <div id="image-container">
+                  <img id="hall-image" src="/assets/download.jpeg" alt="Left Seminar Hall">
+                  <div id="image-caption" class="image-caption">Left Seminar Hall</div>
+              </div>
+      
+              <form>
+                  <label for="hall">Select Hall:</label>
+                  <select id="hall" name="hall" required>
+                      <option value="">Choose a hall...</option>
+                      <option value="hall1">Left Seminar Hall</option>
+                      <option value="hall2">Right Seminar Hall</option>
+                  </select>
+      
+                  <br>
+                  <br>
+      
+                  <label for="name">Applicant's Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Your name.." required>
+      
+                  <label for="purpose">Purpose:</label>
+                  <input type="text" id="purpose" name="purpose" placeholder="Purpose of hall booking.." required>
+      
+                  <label for="date">Date:</label>
+                  <input type="date" id="date" name="date" required>
+      
+                  <label for="hour">Hour:</label>
+                  <div id="hour-cards" class="hour-cards">
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="09:00" required>
+                          <div class="card-content">9:00 AM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="10:00">
+                          <div class="card-content">10:00 AM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="11:00">
+                          <div class="card-content">11:00 AM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="12:00">
+                          <div class="card-content">12:00 PM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="13:00">
+                          <div class="card-content">1:00 PM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="14:00">
+                          <div class="card-content">2:00 PM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="15:00">
+                          <div class="card-content">3:00 PM</div>
+                      </label>
+                      <label class="hour-card">
+                          <input type="checkbox" name="hour" value="16:00">
+                          <div class="card-content">4:00 PM</div>
+                      </label>
+                  </div>
+      
+                  <input type="submit" value="Book Now">
+              </form>
+          </div>
+      
+          <script>
+              document.getElementById("hall").addEventListener("change", function() {
+                  var image = document.getElementById("hall-image");
+                  var caption = document.getElementById("image-caption");
+      
+                  if (this.value === "hall1") {
+                      image.src = "./assets/download.jpeg";
+                      caption.innerHTML = "Left Seminar Hall";
+                  } else if (this.value === "hall2") {
+                      image.src = "./assets/Image by Col·legi de Farmacèutics de Barcelona.jpg";
+                      caption.innerHTML = "Right Seminar Hall";
+                  }
+              });
+          </script>
+      </main>
+      
+    </main>
+    
+    <br>
+    <br>
+    <br>
+        <footer>
+            <p>&copy; 2023 Developed By CS6 Students. All rights reserved.</p>
+        </footer>
+</body>
+</html>
